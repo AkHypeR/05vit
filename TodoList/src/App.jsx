@@ -5,6 +5,7 @@ import TodoForm from './components/TodoForm'
 import TodoItem from './components/TodoItem'
 
 function App() {
+ 
   const [todos, setTodos] = useState([])
 
   const addTodo = (todo) => {
@@ -41,7 +42,6 @@ function App() {
     localStorage.setItem("todos", JSON.stringify(todos))
   }, [todos])
   
-
 
 
   return (
