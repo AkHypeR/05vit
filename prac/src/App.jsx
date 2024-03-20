@@ -1,16 +1,12 @@
-
 import './App.css'
-import  {contextProvider}  from './contexts'
+import { Test } from './Test'
+import { ContextProvider } from './contexts'
 function App() {
- 
-  
-
   return (
-
-   <contextProvider value={{userName,userId,updateUsername }} >
-   
-
-   </ contextProvider>
+    // Wrap the component where data would be shared 
+    <ContextProvider>
+      <Test />
+    </ContextProvider>
   )
 }
 
